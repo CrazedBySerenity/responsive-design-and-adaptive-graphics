@@ -1,0 +1,26 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: center;
+
+    &__header {
+
+        text-align: center;
+        &__container {
+
+        }
+
+        &__text {
+
+            text-align: center;
+            &__container {
+
+            }
+        }
+    }
+
+    &__img {
+        
+    }
+}
