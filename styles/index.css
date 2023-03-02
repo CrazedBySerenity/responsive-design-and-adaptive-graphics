@@ -18,3 +18,40 @@
 .main__header__text {
   text-align: center;
 }
+.main__img {
+  background-image: url(../images/horses-desktop.jpg);
+}
+
+@media screen and (min-width: 1001px) {
+  .main__img {
+    background-image: url(../images/horses-desktop.jpg);
+  }
+  .main__header {
+    font-size: 90px;
+  }
+  .main__header__text {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 1000px) and (min-width: 601px) {
+  .main__img {
+    background-image: url(../images/horses-medium.png);
+  }
+  .main__header {
+    font-size: 72px;
+  }
+  .main__header__text {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .main__img {
+    background-image: url(../images/horses-mobile.png);
+  }
+  .main__header {
+    font-size: 36px;
+  }
+  .main__header__text {
+    font-size: 12px;
+  }
+}
