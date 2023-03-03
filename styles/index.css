@@ -19,13 +19,49 @@
   text-align: center;
 }
 .main__img {
-  background-image: url(../images/horses-desktop.jpg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+.nav__logo {
+  font-family: "Aldrich";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.25px;
+  color: #242635;
+  margin-right: auto;
+}
+.nav__list {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 20px;
+}
+.nav__link__text {
+  margin-left: 30px;
+  text-decoration: none;
 }
 
 @media screen and (min-width: 1001px) {
-  .main__img {
-    background-image: url(../images/horses-desktop.jpg);
-  }
   .main__header {
     font-size: 90px;
   }
@@ -34,9 +70,6 @@
   }
 }
 @media screen and (max-width: 1000px) and (min-width: 601px) {
-  .main__img {
-    background-image: url(../images/horses-medium.png);
-  }
   .main__header {
     font-size: 72px;
   }
@@ -45,13 +78,30 @@
   }
 }
 @media screen and (max-width: 600px) {
-  .main__img {
-    background-image: url(../images/horses-mobile.png);
-  }
   .main__header {
     font-size: 36px;
   }
   .main__header__text {
     font-size: 12px;
   }
+}
+.center-on-screen {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.page-container {
+  max-width: 1440px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
