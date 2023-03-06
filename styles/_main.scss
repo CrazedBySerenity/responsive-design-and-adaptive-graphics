@@ -1,0 +1,50 @@
+@use 'fonts';
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    &__header {
+
+        text-align: center;
+
+        font-family: fonts.$header-font;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 90px;
+        line-height: 102px;
+
+        letter-spacing: -2px;
+
+        color: #242635;
+        &__container {
+
+        }
+
+        &__text {
+            text-align: center;
+            font-family: fonts.$main-font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 33px;
+
+            /* or 150% */
+            text-align: center;
+
+            color: #242635;
+
+            &__container {
+                max-width: 574px;
+            }
+        }
+    }
+
+    &__img {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+}

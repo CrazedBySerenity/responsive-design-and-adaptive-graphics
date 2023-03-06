@@ -1,0 +1,11 @@
+.center-on-screen {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.page-container {
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+}

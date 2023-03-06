@@ -1,0 +1,59 @@
+@use 'fonts';
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    &__logo {
+        font-family: 'Aldrich';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 36px;
+        
+        letter-spacing: -0.25px;
+        
+        color: #242635;
+
+        margin-right: auto;
+    }
+    
+    &__list {
+        list-style-type: none;
+        display: flex;
+        margin-left: 20px;
+    }
+
+    &__link {
+        &__text {
+            margin-left: 30px;
+            text-decoration: none;
+            font-family: fonts.$main-font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+
+            color: #242635;
+            
+            &:hover {
+                color: blue;
+                transition: all 0.2s ease-out;
+            }
+        }
+
+    }
+
+    &__menu {
+        width: 42px;
+        height: 42px;
+
+        visibility: hidden;
+
+        &:hover {
+            color: blue;
+            transition: all 0.2s ease-out;
+        }
+    }
+}
