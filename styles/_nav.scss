@@ -46,14 +46,35 @@
     }
 
     &__menu {
-        width: 42px;
-        height: 42px;
+        &__container {
+            display: none;
+        }
+        
+        &__icon {
+            width: 42px;
+            height: 42px;
+    
+            visibility: hidden;
+    
+            &:hover {
+                color: blue;
+                transition: all 0.2s ease-out;
+            }
+        }
 
-        visibility: hidden;
+        &--no-margins {
+            margin: 0px;
+        }
+            
+        &__list {
+            display: none;
+            list-style-type: none;
 
-        &:hover {
-            color: blue;
-            transition: all 0.2s ease-out;
+            flex-direction: column;
+            align-items: center;
+
+            padding: 0px;
         }
     }
+
 }
