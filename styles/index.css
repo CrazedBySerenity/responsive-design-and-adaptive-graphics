@@ -9,14 +9,33 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .main__header {
   text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 90px;
+  line-height: 102px;
+  letter-spacing: -2px;
+  color: #242635;
 }
 .main__header__text {
   text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 33px;
+  /* or 150% */
+  text-align: center;
+  color: #242635;
+}
+.main__header__text__container {
+  max-width: 574px;
 }
 .main__img {
   display: -webkit-box;
@@ -25,8 +44,9 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-line-pack: end;
-      align-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .nav {
@@ -36,8 +56,9 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .nav__logo {
   font-family: "Aldrich";
@@ -59,6 +80,27 @@
 .nav__link__text {
   margin-left: 30px;
   text-decoration: none;
+  font-family: "Source Sans Pro", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #242635;
+}
+.nav__link__text:hover {
+  color: blue;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.nav__menu {
+  width: 42px;
+  height: 42px;
+  visibility: hidden;
+}
+.nav__menu:hover {
+  color: blue;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 @media screen and (min-width: 1001px) {
@@ -75,6 +117,20 @@
   }
   .main__header__text {
     font-size: 22px;
+    line-height: 33px;
+  }
+  .main__header__text__container {
+    max-width: 574px;
+  }
+  .nav__logo {
+    font-family: "Mukta Vaani", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height, or 150% */
+    letter-spacing: -0.25px;
+    color: #242635;
   }
 }
 @media screen and (max-width: 600px) {
@@ -83,6 +139,26 @@
   }
   .main__header__text {
     font-size: 12px;
+    line-height: 18px;
+  }
+  .main__header__text__container {
+    max-width: 217px;
+  }
+  .nav__logo {
+    font-family: "Mukta Vaani", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height, or 150% */
+    letter-spacing: -0.25px;
+    color: #242635;
+  }
+  .nav__menu {
+    visibility: visible;
+  }
+  .nav__list {
+    display: none;
   }
 }
 .center-on-screen {

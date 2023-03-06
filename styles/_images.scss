@@ -1,3 +1,5 @@
+@use 'fonts';
+
 @media screen and (min-width: 1001px) {
     // .main__img {
     //     background-image: url(../images/horses-desktop.jpg)
@@ -22,6 +24,26 @@
 
         &__text {
             font-size: 22px;
+            line-height: 33px;
+
+            &__container {
+                max-width: 574px;
+            }
+        }
+    }
+
+    .nav {
+        &__logo {
+            font-family: fonts.$mobile-logo-font;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 24px;
+            line-height: 36px;
+
+            /* identical to box height, or 150% */
+            letter-spacing: -0.25px;
+
+            color: #242635;
         }
     }
 }
@@ -36,6 +58,34 @@
 
         &__text {
             font-size: 12px;
+            line-height: 18px;
+
+            &__container {
+                max-width: 217px;
+            }
+        }
+    }
+
+    .nav {
+        &__logo {
+            font-family: fonts.$mobile-logo-font;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 24px;
+            line-height: 36px;
+
+            /* identical to box height, or 150% */
+            letter-spacing: -0.25px;
+
+            color: #242635;
+        }
+
+        &__menu {
+            visibility: visible;
+        }
+
+        &__list {
+            display: none;
         }
     }
 }

@@ -3,7 +3,7 @@
 .nav {
     display: flex;
     justify-content: flex-end;
-    align-content: center;
+    align-items: center;
 
     &__logo {
         font-family: 'Aldrich';
@@ -29,6 +29,31 @@
         &__text {
             margin-left: 30px;
             text-decoration: none;
+            font-family: fonts.$main-font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+
+            color: #242635;
+            
+            &:hover {
+                color: blue;
+                transition: all 0.2s ease-out;
+            }
+        }
+
+    }
+
+    &__menu {
+        width: 42px;
+        height: 42px;
+
+        visibility: hidden;
+
+        &:hover {
+            color: blue;
+            transition: all 0.2s ease-out;
         }
     }
 }
